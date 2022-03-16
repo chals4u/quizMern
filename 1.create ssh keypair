@@ -1,0 +1,22 @@
+1.create ssh keypair
+1.type command at empty foler ssh-keygen
+2.press just enter for all other questions
+3.copy code from given file path
+4.go to settings and ssh tab paste 
+5.change url as url = git@github.com:chals4u/quizMern.git //corresponding git ssh link
+6.Add username and email as follows in the config file
+
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@github.com:chals4u/quizMern.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[user]
+	name = chalsa4u
+	email = chalsa4u@gmail.com
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
